@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário PHP</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+ 
+    <div class="container">
+        <center><h1> Formulário de Cliente</h1></center>
+        <form id="form" action="produtos.php" method="post" name="formulario">
+            <label for="nome">Nome:</label>
+            <input class="formInput" type="text" name="nome" id="inNome" required>
+            <label for="nome">Idade:</label>
+            <input class="formInput" type="number" min="18" max="100" name="idade" id="inIdade" required>
+            <label for="nome">Quantidade Produtos:</label>
+            <input class="formInput" type="number" min="1" max="4" name="qtdProd" id="inProd" required>
+            <label for="nome">E-mail:</label>
+            <input class="formInput" type="email" name="email" id="inEmail" required>
+            <input id="inSubmit" type="submit" value="Enviar" onclick="gravarNome()">
+        </form>
+    </div>
+    
+<script src="valida_form.js"></script>
+        </form>
+</body>
+</html>
